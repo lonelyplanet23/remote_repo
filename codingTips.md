@@ -25,3 +25,6 @@ int cmp(const void *a,const void *b) {
 qsort(num, n, sizeof(int), cmp);
 
 ```
+9. 不定项输入，检查是否有`~`或`!= EOF`
+10. `(n >> 1) + 1` 除以二再加1一定要加括号 
+11. 二维数组循环时一定要看好上界
