@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "m-A.C": "cpp",
+        "m-B.C": "cpp",
+        "type_traits": "cpp",
+        "stdlib.h": "c"
     }
 }

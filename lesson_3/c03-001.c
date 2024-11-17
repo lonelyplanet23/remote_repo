@@ -10,6 +10,7 @@ int main()
     {
         bits[cnt] = n & 1; //! &和 &=
         n >>= 1;
+        
         cnt++;
     }
     for(int i = 32; i >= 1; i--) // 注意倒着输出
