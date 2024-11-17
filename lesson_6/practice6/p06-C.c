@@ -27,25 +27,25 @@ void my_pow(ll x, ll map[]){
     }
     return ;
 }
-ll my_log(ll x)
+ll my_log(ll map[], ll x)
 {
-    ll ans = 0;
-    while(x >= 3)
+    for(ll i = 0; i <= 22; i++)
     {
-        x /= 3;
-        ans++;
+        if(map[i] <= x && map[i+1] > x)
+        {
+            return i;
+        }
     }
-    return ans;
 }
 ll a[25];
 ll map[25];
 int main()
 {
     ll x;
-    my_pow(20, map);
+    my_pow(22, map);
     while(~scanf("%lld", &x))
     {
-        ll n = my_log(x);
+        ll n = my_log(map, x);
         ll xx = x;
         memset(a, 0, sizeof(a));
         printf("%lld =", x);
