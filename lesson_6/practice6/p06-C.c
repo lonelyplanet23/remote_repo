@@ -51,8 +51,8 @@ int main()
         printf("%lld =", x);
         for(int i = n; i >= 0; i--)
         {
-                for(int j = 1; j <= 2; j++)
-                {
+            for(int j = 1; j <= 2; j++)
+            {
                     if(x >= map[i])
                     {
                         x -= map[i];

@@ -29,3 +29,26 @@ qsort(num, n, sizeof(int), cmp);
 10. `(n >> 1) + 1` 除以二再加1一定要加括号 
 11. 二维数组循环时一定要看好上界
 12. 调试输出：`fprintf(stderr, ....)`
+13. 要想输出`%` 只需要`printf("%%")`即可转义  反斜杠同理
+14. `sscanf`的用法
+   + `int sscanf(const char *str, const char *format, ...)`
+   + 参数
+      + str -- 这是 C 字符串，是函数检索数据的源。
+      + format -- 这是 C 字符串，包含了以下各项中的一个或多个：空格字符、非空格字符 和 format 说明符。
+      + format 说明符形式为 `[=%[*][width][modifiers]type=]`等同于输入输出中的
+   + 从输入的字符串中转化出不同类型变量，与`sprintf`对应
+   + 如我想读入`17/Apr/2018:10:28`中的时间、月份等等只需要 `sscanf("%d/%s/%d:%d:%d", &day, month, &y, &h, &m)`
+
+15. 声明一个指针变量，再使用时前，一定要有所指向，即合法化
++ 此为非法操作
+   ```C
+      int a = 5;
+      int *p
+      *p = 5 
+   ``` 
++ 此为合法操作
+   ```C
+      int a = 5;
+      int *p = a
+      *p = 5 //调用指针的函数也算！
+   ``` 
