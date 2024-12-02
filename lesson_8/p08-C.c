@@ -78,7 +78,7 @@ int main()
     for(int j = 1; j <= T; j++)
     {
         scanf("%u", &a);
-        printBinary(a);
+        //printBinary(a);
         //* 函数重载的作用，思考如何用C++/python优化！
         int t;
         scanf("%d", &t);
