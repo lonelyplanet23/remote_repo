@@ -24,7 +24,7 @@ int init_prime(int primes[], int n) //! 生成n个质数
     num = 7, step = 2;
     while(cnt < n)
     {
-        step = 6 - step; //* 以6为单位，构建4-2序列，把一定不是质数的数排除掉
+        step = 6 - step; //* 以6为单位，构建2-4序列，把一定不是质数的数排除掉
         if(isPrime(primes, num))
         {
             primes[cnt++] = num; 
