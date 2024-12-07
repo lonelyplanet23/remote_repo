@@ -33,7 +33,7 @@ int init_prime(int primes[], int n) //! 生成n个质数
     }
     return cnt;
 }
-int primes[1001];
+int primes[10000001];
 int main()
 {
     int n;
