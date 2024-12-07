@@ -1,0 +1,1 @@
+replace_from_file.exe < in.txt > FromFile.c
